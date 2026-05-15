@@ -62,24 +62,24 @@ Définition des tables Snowflake pour les données semi-structurées au format J
 
 ---
 
-## Étape 4 - Chargement CSV - Axel
+## Étape 4 - Chargement CSV - Mathis
 
 Chargement des fichiers CSV depuis le stage S3 `@linkedin_stage` dans les tables correspondantes via la commande `COPY INTO`, en appliquant le format `csv_format`.
 
 ```sql
--- À compléter : voir sql/03_load_data_axel.sql
+-- À compléter : voir sql/05_load_data_mathis.sql
 ```
 
 ![Load CSV](screenshots/04_load_csv.png)
 
 ---
 
-## Étape 5 - Chargement JSON - Mathis
+## Étape 5 - Chargement JSON - Axel
 
 Chargement des fichiers JSON depuis le stage S3 dans les tables Snowflake de type `VARIANT`, via la commande `COPY INTO` avec le format `json_format`.
 
 ```sql
--- À compléter : voir sql/06_load_data_mathis.sql
+-- À compléter : voir sql/03_load_data_axel.sql
 ```
 
 ![Load JSON](screenshots/05_load_json.png)
