@@ -13,10 +13,10 @@ Les données comprennent des fichiers au format **CSV** (offres d'emploi, entrep
 | Tâche | Axel Remillat | Mathis |
 |---|---|---|
 | Setup Snowflake (BDD, schéma, stage, formats) | ✅ | |
-| Création des tables CSV | ✅ | |
-| Création des tables JSON | | ✅ |
-| Chargement des données CSV | ✅ | |
-| Chargement des données JSON | | ✅ |
+| Création des tables CSV | | ✅ |
+| Création des tables JSON | ✅ | |
+| Chargement des données CSV | | ✅ |
+| Chargement des données JSON | ✅ | |
 | Analyse 1 – Top 10 titres par industrie | ✅ | |
 | Analyse 2 – Top 10 salaires par industrie | ✅ | |
 | Analyse 3 – Répartition par taille d'entreprise | | ✅ |
@@ -38,24 +38,24 @@ Création de la base de données `linkedin`, du schéma `raw`, du stage S3 et de
 
 ---
 
-## Étape 2 - Création des tables CSV - Axel
+## Étape 2 - Création des tables CSV - Mathis
 
 Définition des tables Snowflake destinées à accueillir les données structurées au format CSV : offres d'emploi, entreprises, compétences, niveaux de poste, etc.
 
 ```sql
--- À compléter : voir sql/02_create_tables_axel.sql
+-- À compléter : voir sql/05_create_tables_mathis.sql
 ```
 
 ![Tables CSV](screenshots/02_tables_csv.png)
 
 ---
 
-## Étape 3 - Création des tables JSON - Mathis
+## Étape 3 - Création des tables JSON - Axel
 
 Définition des tables Snowflake pour les données semi-structurées au format JSON, en utilisant le type `VARIANT` de Snowflake pour stocker les objets imbriqués.
 
 ```sql
--- À compléter : voir sql/05_create_tables_mathis.sql
+-- À compléter : voir sql/02_create_tables_axel.sql
 ```
 
 ![Tables JSON](screenshots/03_tables_json.png)
