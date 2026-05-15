@@ -1,0 +1,1 @@
+-- Création des tables principales du projet Axel : définition des structures de données et des contraintes

@@ -1,0 +1,1 @@
+-- Configuration initiale de l'environnement BigData pour Axel : création du schéma, des rôles et des paramètres de session

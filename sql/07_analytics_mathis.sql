@@ -1,0 +1,1 @@
+-- Requêtes analytiques et agrégations sur les données de Mathis : KPIs, tendances et rapports de synthèse
