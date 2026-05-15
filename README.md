@@ -165,11 +165,15 @@ Visualisation interactive des analyses 3, 4 et 5 directement dans Snowflake via 
 
 ## Problèmes rencontrés et solutions
 
-- *(À compléter)*
+- **Problème** : Snowflake exécutait les scripts ligne par ligne au lieu de tout exécuter → **Solution** : Utiliser "Run All" via la flèche ▼ à côté du bouton Run, ou Ctrl+A pour tout sélectionner avant d'exécuter
+- **Problème** : Erreur `Cannot perform STAGE LS - no current database` lors du LIST @stage → **Solution** : Toujours déclarer USE DATABASE et USE SCHEMA en début de chaque script
+- **Problème** : La colonne `company_name` dans `job_postings` contient des IDs numériques et non des noms d'entreprises → **Solution** : Cast en NUMBER (`company_name::NUMBER`) pour joindre directement sur `company_id` dans la table `companies`
+- **Problème** : L'app Streamlit ne trouvait pas les tables (`Object JOB_POSTINGS does not exist`) → **Solution** : Ajouter `session.sql("USE DATABASE linkedin").collect()` et `session.sql("USE SCHEMA raw").collect()` en début d'app
+- **Problème** : Les scripts SQL collés dans Snowflake se retrouvaient sur une seule ligne → **Solution** : Coller le code depuis un éditeur texte ou utiliser Run All
 
 ---
 
 ## Auteurs
 
-- **Axel Remillat** — ESME Paris, 2026
-- **Mathis [Nom]** — ESME Paris, 2026
+- **Axel Remillat** — Big Data & IA, ESME Paris, 2026
+- **Mathis Levrot** — Big Data & IA, ESME Paris, 2026
