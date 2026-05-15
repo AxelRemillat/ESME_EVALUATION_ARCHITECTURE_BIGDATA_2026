@@ -146,6 +146,23 @@ Analyse de la répartition des offres d'emploi par secteur d'activité (Tech, Fi
 
 ---
 
+## Applications Streamlit
+
+### App Axel - Analyses 1 & 2
+Visualisation interactive des analyses 1 et 2 directement dans Snowflake via Streamlit.
+
+![Streamlit Axel - Analyse 1](screenshots/11_streamlit_axel_analyse1.png)
+![Streamlit Axel - Analyse 2](screenshots/12_streamlit_axel_analyse2.png)
+
+### App Mathis - Analyses 3, 4 & 5
+Visualisation interactive des analyses 3, 4 et 5 directement dans Snowflake via Streamlit.
+
+![Streamlit Mathis - Analyse 3](screenshots/13_streamlit_mathis_analyse3.png)
+![Streamlit Mathis - Analyse 4](screenshots/14_streamlit_mathis_analyse4.png)
+![Streamlit Mathis - Analyse 5](screenshots/15_streamlit_mathis_analyse5.png)
+
+---
+
 ## Problèmes rencontrés et solutions
 
 - *(À compléter)*
