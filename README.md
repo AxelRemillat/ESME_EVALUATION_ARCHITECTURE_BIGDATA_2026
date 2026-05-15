@@ -170,7 +170,7 @@ L'application Streamlit de Mathis regroupe les analyses 3, 4 et 5 dans une inter
 - **Problème** : La colonne `company_name` dans `job_postings` contient des IDs numériques et non des noms d'entreprises → **Solution** : Cast en NUMBER (`company_name::NUMBER`) pour joindre directement sur `company_id` dans la table `companies`
 - **Problème** : L'app Streamlit ne trouvait pas les tables (`Object JOB_POSTINGS does not exist`) → **Solution** : Ajouter `session.sql("USE DATABASE linkedin").collect()` et `session.sql("USE SCHEMA raw").collect()` en début d'app
 - **Problème** : Les scripts SQL collés dans Snowflake se retrouvaient sur une seule ligne → **Solution** : Coller le code depuis un éditeur texte ou utiliser Run All
-
+- **Problème**: La coordination entre les deux comptes Snowflake séparés a été une difficulté majeure — nous ne savions pas si nous étions sur la même session, si les objets créés par l'un étaient visibles par l'autre, et Snowflake ne propose pas de mécanisme simple de partage de workspace entre comptes différents → Solution : Chaque membre a recréé l'environnement complet sur son propre compte (DB, stage, formats, tables), et la coordination s'est faite uniquement via le repo GitHub commun pour synchroniser les fichiers SQL et le code Streamlit
 ---
 
 ## Auteurs
