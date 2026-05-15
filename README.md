@@ -175,5 +175,5 @@ L'application Streamlit de Mathis regroupe les analyses 3, 4 et 5 dans une inter
 
 ## Auteurs
 
-- **Axel Remillat** — Big Data & IA, ESME Paris, 2026
-- **Mathis Levrot** — Big Data & IA, ESME Paris, 2026
+- **Axel Remillat** — Big Data & Digital Marketing, ESME Paris, 2026
+- **Mathis Levrot** — Big Data & Digital Marketing, ESME Paris, 2026
